@@ -1,0 +1,39 @@
+调整国策时间
+
+[h1]已支持Mod[/h1]
+56之路： [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3653420473]调整国策时间-56之路[/url]
+旧世蓝调：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3665129337]调整国策时间-旧世蓝调[/url]
+千禧黎明： [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3665125422]调整国策时间-千禧黎明[/url]
+
+[h1]作用描述[/h1]
+可动态调整所有国策需要的时间，有如下选项：
+减少1/2/7/35天
+增加1/2/7/35天
+
+该选项以决议的形式出现
+每天每个选项可点击一次仅限玩家可用
+且仅会影响当前操作国家的国策时间
+
+[h1]兼容性说明[/h1] 
+该Mod与大型模组（如KR / KX 等）存在兼容性问题，会出现崩溃。请不要一起使用。 
+如有需要，请 
+1. 使用已发布的特定兼容版本（如有） 
+或 
+2. 使用本Mod内置工具自行生成对应Mod的适配版本 
+
+[b]请勿将未适配版本直接与大型Mod同时启用。[/b]
+
+
+[h1]其他支持[/h1]
+本Mod内置了一个工具，用于适配其他mod，
+你可以在Mod路径下(本Mod id 为3649047435)找到文件并启动它：
+[img]https://i.imgur.com/D51ni1z.png[/img]
+以56之路为例：
+[img]https://i.imgur.com/kRjCrar.png[/img]
+该最终目录的编号来自于：
+[img]https://i.imgur.com/G1sFbW0.png[/img]
+选择目录：
+[img]https://i.imgur.com/ItNE6yv.png[/img]
+成功：
+[img]https://i.imgur.com/7IwJer7.png[/img]
+[b]你可以按顺序执行该操作以适配mod及其子Mod[/b]

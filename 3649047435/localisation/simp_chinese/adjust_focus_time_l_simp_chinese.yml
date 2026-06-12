@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ adjust_focus_time:0 "调整国策时间"
+ reduce_focus_time_1:0 "减少国策时间1天"
+ reduce_focus_time_2:0 "减少国策时间2天"
+ reduce_focus_time_7:0 "减少国策时间7天"
+ reduce_focus_time_35:0 "减少国策时间35天"
+ increase_focus_time_1:0 "增加国策时间1天"
+ increase_focus_time_2:0 "增加国策时间2天"
+ increase_focus_time_7:0 "增加国策时间7天"
+ increase_focus_time_35:0 "增加国策时间35天"

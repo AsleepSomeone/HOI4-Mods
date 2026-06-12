@@ -1,0 +1,54 @@
+Adjust National Focus Time
+
+[h1]Supported Mods[/h1]
+The Road to 56: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3653420473]Adjust National Focus Time - The Road to 56[/url]
+Old World Blues: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3665129337]Adjust National Focus Time - Old World Blues[/url]
+Millennium Dawn: [url=https://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=3665125422]Adjust National Focus Time - Millennium Dawn
+[/url]
+
+
+[h1]Description[/h1]
+Allows dynamic adjustment of the time required for all national focuses. The following options are available:
+Reduce by 1 / 2 / 7 / 35 days
+Increase by 1 / 2 / 7 / 35 days
+
+These options appear in the form of Decisions.
+Each option can be selected once per day.
+Player only.
+Only affects the national focus time of the currently played country.
+
+[h1]Compatibility Notice[/h1]
+This mod has compatibility issues with large overhaul mods (such as KR / KX) and may cause crashes. Please do not use them together.
+
+If needed, please:
+1. Use a dedicated compatibility version (if available)
+or
+2. Use the built-in tool included in this mod to generate a compatible version for the target mod
+
+[b]Do not enable the unadapted version together with large overhaul mods.[/b]
+
+[h1]Additional Support[/h1]
+This mod includes a built-in tool for compatibility with other mods.
+
+You can find and launch it in the mod directory
+(Mod ID: 3649047435):
+
+[img]https://i.imgur.com/D51ni1z.png[/img]
+
+Using The Road to 56 as an example:
+
+[img]https://i.imgur.com/kRjCrar.png[/img]
+
+The final directory number comes from:
+
+[img]https://i.imgur.com/G1sFbW0.png[/img]
+
+Select the directory:
+
+[img]https://i.imgur.com/ItNE6yv.png[/img]
+
+Success:
+
+[img]https://i.imgur.com/7IwJer7.png[/img]
+
+[b]Follow the steps below in order to adapt this mod for other mods and their sub-mods.[/b]
