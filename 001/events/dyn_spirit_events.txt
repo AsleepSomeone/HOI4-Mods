@@ -1,0 +1,19 @@
+add_namespace = dyn_spirit # 注册事件前缀命名空间，告诉引擎以dyn_spirit开头的都是我的事件，避免和原版事件ID冲突
+
+country_event = { # 定义这是一个国家级别的事件
+	id = dyn_spirit.10 # 事件唯一ID
+	title = dyn_spirit.10.t # 调用的本地化标题文件里的代码
+	desc = dyn_spirit.10.d # 调用的本地化描述文件里的代码
+	picture = GFX_report_event_generic_factory # 事件框右上角的配图
+
+	is_triggered_only = yes # 设定该事件只能被其他代码(如on_actions开局触发器)调用触发，不会随机按MTTH(平均发生时间)乱弹
+
+	option = { # 第一个选项按钮
+		name = dyn_spirit.10.a # 按钮上的文字
+		add_ideas = dyn_static_spirit_idea # 执行效果：玩家点击此项后，直接给国家挂上定义好的复合民族精神
+	}
+	option = { # 第二个选项按钮
+		name = dyn_spirit.10.b # 按钮上的文字
+		# 里面没写任何效果代码，代表玩家点击后什么事都不会发生，仅关闭事件窗口
+	}
+}

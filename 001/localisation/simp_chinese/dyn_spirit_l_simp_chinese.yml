@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ dyn_spirit_category: "专属增益面板"
+ dyn_spirit_category_desc: "在此处控制民族精神的启用状态，以及获取各类临时加成。"
+ 
+ dyn_static_spirit_idea: "民族复兴精神"
+ dyn_static_spirit_idea_desc: "包含各项军工、科研、政治与军队全方位加成的复合精神。"
+
+ enable_dyn_spirit_decision: "启用民族复兴精神"
+ disable_dyn_spirit_decision: "关闭民族复兴精神"
+ 
+ add_faction_point_decision: "获取政治/指挥点数"
+ add_research_slot_decision: "增加一个科研槽"
+ add_mil_xp_decision: "获取三军经验各100点"
+ add_sp_breakthroughs_decision: "获取四项实验设施突破点"
+ add_all_mio_funds_decision: "为所有军工机构拨款升级"
+ add_manpower_decision: "获取一百万预备役人力"
+ grant_commander_traits_decision: "随机赋予4名将领神级特质"
+ level_up_commander_star_decision: "随机提拔一名将领 (仅升星级)"
+ level_up_commander_decision: "随机提拔一名将领 (仅加四维)"
+ add_faction_initiative_decision: "增加 50 点阵营倡议点数"
+ temp_mastery_gain_decision: "临时开启三军精通获取 (持续7天)"
+ 
+ dyn_spirit_weekly_mastery: "三军精通激增"
+ dyn_spirit_weekly_mastery_desc: "在接下来的7天内，三军经验将获得固定数额的快速增长。"
+
+ dyn_spirit.10.t: "是否启用专属民族精神？"
+ dyn_spirit.10.d: "开局选项：您可以现在直接启用包含所有复合加成的专属民族精神，或者稍后在决议面板中开启。"
+ dyn_spirit.10.a: "立即启用！"
+ dyn_spirit.10.b: "暂时不启用。"

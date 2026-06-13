@@ -1,0 +1,12 @@
+adjust_focus_time = {
+	priority = 7500
+
+	allowed = {
+        is_ai = no
+	}
+
+	visible = {
+        is_ai = no
+	}
+
+}

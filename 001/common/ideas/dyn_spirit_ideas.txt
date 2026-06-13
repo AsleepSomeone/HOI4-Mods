@@ -1,0 +1,70 @@
+ideas = {
+	country = { # 国家精神分类
+		dyn_static_spirit_idea = { # 具体的民族精神ID
+			picture = generic_intel_bonus # 精神在面板上显示的默认图标
+			
+			modifier = { # 具体效果修正区块
+				production_factory_efficiency_retention_factor = 1 # 生产效率保持系数 (切线掉的效率变少)
+				production_factory_efficiency_gain_factor = 10 # 生产效率增长系数 (红条涨得更快)
+				production_factory_max_efficiency_factor = 1# 军工最大生产效率 (红条上限)
+				production_speed_buildings_factor = 50 # 整体建造速度 (包括民工、军工、基建等建设速度)
+				industrial_capacity_factory = 20 # 民用工厂产出 (能当更多民工用，建设能力更强)
+				research_speed_factor = 500 # 科研速度 (减科研时间)
+				industrial_capacity_dockyard = 1000 海军船厂产出 (造船更快)
+				consumer_goods_expected_value = -0.5 # 消费品预期值系数 (减少所需的消费品工厂)
+				resources_produced_factor = 50 # 本土资源产出系数 (每座工厂额外产出资源)
+				political_advisor_cost_factor = -0.5 # 政治顾问花费系数 (招募内阁更便宜)
+				political_power_gain = 5 # 政治点数获取 (每天增加的PP点)
+				stability_factor = 0.2 # 稳定度系数 (+20%稳定度)
+				experience_gain_army_factor = 0.5 # 陆军经验获取系数 (打仗、演习给的经验更多)
+				experience_gain_navy_factor = 0.5 # 海军经验获取系数
+				experience_gain_air_factor = 0.5 # 空军经验获取系数
+				justify_wargoal_time = -1 # 正当化战争目标时间 (造宣称更快)
+				operation_preparation_time = -0.8 # 间谍行动准备时间 (特工行动更快)
+				# character_experience_gain_factor = 0.5 # 将领/科学家经验获取系数 (升级更快)
+				training_time_army_factor = -0.2 # 陆军训练时间系数 (爆兵更快)
+				training_time_navy_factor = -0.2 # 海军训练时间系数
+				training_time_air_factor = -0.2 # 空军训练时间系数
+
+                # 授勋
+                automatic_grant_medal_chance = 1
+				unit_medal_effectiveness = 2
+                
+                experience_gain_army_unit_factor = 1000
+                experience_gain_navy_unit_factor = 1000
+                experience_gain_air_unit_factor = 1000
+
+                resistance_target = -0.5 # 抵抗度目标值 (强力压制占领区抵抗度)
+                compliance_gain = 0.2 # 顺从度每日增长 (加速占领区顺从)
+                subjects_autonomy_gain = -500 # 每日附属国自治度变化 (死死压制附属国，使其无法独立)
+
+                # 虚空产出资源 (国家精神直接赠送的平白资源)
+                country_resource_steel = 1000 # 额外产出100点钢铁
+                country_resource_oil = 10000 # 额外产出100点石油
+                country_resource_aluminium = 1000 # 额外产出100点铝 (注意：游戏底层代码铝是 aluminium)
+                country_resource_rubber = 1000 # 额外产出100点橡胶
+                country_resource_tungsten = 1000 # 额外产出100点钨
+                country_resource_chromium = 1000 # 额外产出100点铬
+				
+				# 间谍与情报机构加成
+				# num_operatives_slots = 5 # 增加额外最大间谍槽位数量
+				intel_network_gain_factor = 10.0 # 情报网建立速度 (+1000%)
+				cryptology_defense_speed_factor = 10.0 # 密码学防御升级速度 (+200%)
+				cryptology_offense_speed_factor = 10.0 # 密码学破译敌人速度 (+200%)
+				enemy_operative_detection_chance_factor = 10.0 # 发现并抓捕敌方间谍的几率 (+200%)
+				enemy_operative_capture_chance_factor = 10.0 # 敌方间谍被捕几率 (+200%)
+				counter_intelligence_factor = 100.0 # 反间谍能力 (+200%)
+				operative_mission_efficiency_factor = 10.0 # 间谍任务执行效率 (+100%)
+				operative_intel_extraction_factor = 10.0 # 间谍提取情报价值 (+100%)
+                
+                max_command_power = 500
+                special_project_speed_factor = 10
+                scientist_breakthrough_bonus_factor = 100
+                scientist_xp_gain_factor = 100
+			}
+			rule = { # 特殊游戏规则区块
+				can_create_factions = yes # 允许该国家无视原版意识形态限制，强制可以创建阵营
+			}
+		}
+	}
+}

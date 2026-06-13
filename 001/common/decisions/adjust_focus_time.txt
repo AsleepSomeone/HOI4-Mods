@@ -1,0 +1,154 @@
+adjust_focus_time = {
+	reduce_focus_time_1 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_reduction_1 = yes
+		}
+	}
+ 
+	reduce_focus_time_2 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_reduction_2 = yes
+		}
+	}
+ 
+	reduce_focus_time_7 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_reduction_7 = yes
+		}
+	}
+
+	reduce_focus_time_35 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_reduction_35 = yes
+		}
+	}
+
+
+	increase_focus_time_1 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_increase_1 = yes
+		}
+	}
+ 
+	increase_focus_time_2 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_increase_2 = yes
+		}
+	}
+ 
+	increase_focus_time_7 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_increase_7 = yes
+		}
+	}
+
+	increase_focus_time_35 = {
+		icon = generic_research
+		allowed = {
+		}
+		available = {
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		# days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+            apply_focus_cost_increase_35 = yes
+		}
+	}
+}

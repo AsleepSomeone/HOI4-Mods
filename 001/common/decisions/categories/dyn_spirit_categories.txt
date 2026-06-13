@@ -1,0 +1,5 @@
+dyn_spirit_category = { # 决议组类别的唯一ID
+    priority = 9999
+	icon = generic_research # 在政治面板的决议大类中显示的图标
+	allowed = { is_ai = no } # 允许哪些国家看到这个类别：always = yes 代表任何国家都能看到
+}

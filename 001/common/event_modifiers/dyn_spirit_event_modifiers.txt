@@ -1,0 +1,5 @@
+dyn_spirit_weekly_mastery = { # 临时修正(Buff)的唯一ID
+	experience_gain_army = 10 # 每天固定获得10点陆军经验 (注意这里不是系数百分比，而是每天直接给固定数值的精通)
+	experience_gain_navy = 10 # 每天固定获得10点海军经验
+	experience_gain_air = 10 # 每天固定获得10点空军经验
+}

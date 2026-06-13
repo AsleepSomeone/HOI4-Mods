@@ -1,0 +1,255 @@
+dyn_spirit_category = { # 决议组ID，必须和categories文件夹里定义的ID一致
+	
+	enable_dyn_spirit_decision = { # 启用精神的决议
+		icon = generic_research # 决议旁边的图标
+		available = { NOT = { has_idea = dyn_static_spirit_idea } } # 可用条件：当前国家【没有】这个民族精神
+		cost = 0 # 消耗0点政治点数
+		fire_only_once = no # 是否只能点击一次：no代表可以重复触发（只要满足可用条件）
+		complete_effect = { add_ideas = dyn_static_spirit_idea } # 完成效果：添加该民族精神
+	}
+
+	disable_dyn_spirit_decision = { # 关闭精神的决议
+		icon = generic_research
+		available = { has_idea = dyn_static_spirit_idea } # 可用条件：当前国家必须【拥有】这个民族精神
+		cost = 0
+		fire_only_once = no
+		complete_effect = { remove_ideas = dyn_static_spirit_idea } # 完成效果：移除该民族精神
+	}
+	
+	add_faction_point_decision = { # 获取点数决议
+		icon = generic_political_power
+		cost = 0
+		days_remove = 1 # 点击后进入1天的冷却/隐藏状态，配合fire_only_once=no就是每天能点一次
+		complete_effect = { 
+			add_command_power = 50 # 增加50点指挥点数 (指挥棒)
+			add_political_power = 50 # 增加50点政治点数 (PP点)
+		}
+	}
+	
+	add_research_slot_decision = { # 增加科研槽决议
+		icon = generic_research
+		cost = 0
+		days_remove = 1
+		complete_effect = { add_research_slot = 1 } # 直接永久增加1个科研槽
+	}
+	
+	add_mil_xp_decision = {
+		icon = generic_army_experience
+		cost = 0
+		days_remove = 0
+		complete_effect = {
+			army_experience = 1000
+			navy_experience = 1000
+			air_experience = 1000
+		}
+	}
+	
+	add_sp_breakthroughs_decision = {
+		icon = generic_research
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			add_breakthrough_points = { specialization = specialization_land value = 10 }
+			add_breakthrough_points = { specialization = specialization_naval value = 10 }
+			add_breakthrough_points = { specialization = specialization_air value = 10 }
+			add_breakthrough_points = { specialization = specialization_nuclear value = 10 }
+		}
+	}
+
+	add_all_mio_funds_decision = { # 为所有军工机构添加资金决议
+		icon = generic_research
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			every_military_industrial_organization = { # 遍历当前国家拥有的每一个军工机构
+				add_mio_funds = 100000 # 为其增加100000点资金
+			}
+		}
+	}
+
+	add_manpower_decision = { # 获取人力决议
+		icon = generic_manpower_bonus
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			add_manpower = 1000000 # 直接给国家池增加100万可用人力
+		}
+	}
+    grant_commander_traits_decision = { # 赋予将领全特质决议
+        icon = generic_army_experience
+        available = { always = yes }
+        cost = 0
+        days_remove = 1
+        complete_effect = {
+            # 第1位陆军将领
+            random_unit_leader = {
+                limit = { is_army_leader = yes NOT = { has_unit_leader_flag = trait_granted_flag } }
+                set_unit_leader_flag = trait_granted_flag
+                add_unit_leader_trait = panzer_leader
+                add_unit_leader_trait = infantry_officer
+                add_unit_leader_trait = cavalry_officer
+                add_unit_leader_trait = trickster
+                add_unit_leader_trait = engineer
+                add_unit_leader_trait = commando
+                add_unit_leader_trait = organizer
+                add_unit_leader_trait = skilled_staffer
+                add_unit_leader_trait = naval_invader
+                add_unit_leader_trait = desert_fox
+                add_unit_leader_trait = swamp_fox
+                add_unit_leader_trait = trait_mountaineer
+                add_unit_leader_trait = hill_fighter
+                add_unit_leader_trait = jungle_rat
+                add_unit_leader_trait = ranger
+                add_unit_leader_trait = urban_assault_specialist
+                add_unit_leader_trait = winter_specialist
+                add_unit_leader_trait = brilliant_strategist
+                add_unit_leader_trait = inflexible_strategist
+                add_unit_leader_trait = pragmatic
+                add_unit_leader_trait = cavalry_leader # 骑兵将领 (元帅/将领特性)
+                add_unit_leader_trait = trait_engineer # 工程专家 (原版特质名通常有trait_前缀区分)
+                add_unit_leader_trait = infantry_leader # 步兵将领 (元帅/将领特性)
+            }
+            # 第2位陆军将领
+            random_unit_leader = {
+                limit = { is_army_leader = yes NOT = { has_unit_leader_flag = trait_granted_flag } }
+                set_unit_leader_flag = trait_granted_flag
+                add_unit_leader_trait = panzer_leader
+                add_unit_leader_trait = infantry_officer
+                add_unit_leader_trait = cavalry_officer
+                add_unit_leader_trait = trickster
+                add_unit_leader_trait = engineer
+                add_unit_leader_trait = commando
+                add_unit_leader_trait = organizer
+                add_unit_leader_trait = skilled_staffer
+                add_unit_leader_trait = naval_invader
+                add_unit_leader_trait = desert_fox
+                add_unit_leader_trait = swamp_fox
+                add_unit_leader_trait = trait_mountaineer
+                add_unit_leader_trait = hill_fighter
+                add_unit_leader_trait = jungle_rat
+                add_unit_leader_trait = ranger
+                add_unit_leader_trait = urban_assault_specialist
+                add_unit_leader_trait = winter_specialist
+                add_unit_leader_trait = brilliant_strategist
+                add_unit_leader_trait = inflexible_strategist
+                add_unit_leader_trait = pragmatic
+                add_unit_leader_trait = cavalry_leader # 骑兵将领 (元帅/将领特性)
+                add_unit_leader_trait = trait_engineer # 工程专家 (原版特质名通常有trait_前缀区分)
+                add_unit_leader_trait = infantry_leader # 步兵将领 (元帅/将领特性)
+
+            }
+            # 第1位海军将领
+            random_unit_leader = {
+                limit = { is_navy_leader = yes NOT = { has_unit_leader_flag = trait_granted_flag } }
+                set_unit_leader_flag = trait_granted_flag
+                add_unit_leader_trait = seawolf
+                add_unit_leader_trait = fleet_protector
+                add_unit_leader_trait = blockade_runner
+                add_unit_leader_trait = superior_tactician
+                add_unit_leader_trait = air_controller
+                add_unit_leader_trait = big_gun_expert
+                add_unit_leader_trait = bold
+
+                add_unit_leader_trait = spotter
+                add_unit_leader_trait = ironside
+
+                add_unit_leader_trait = green_water_expert
+                add_unit_leader_trait = arctic_water_expert
+                add_unit_leader_trait = blue_water_expert
+                add_unit_leader_trait = inshore_fighter
+            }
+            # 第2位海军将领
+            random_unit_leader = {
+                limit = { is_navy_leader = yes NOT = { has_unit_leader_flag = trait_granted_flag } }
+                set_unit_leader_flag = trait_granted_flag
+                add_unit_leader_trait = seawolf
+                add_unit_leader_trait = fleet_protector
+                add_unit_leader_trait = blockade_runner
+                add_unit_leader_trait = superior_tactician
+                add_unit_leader_trait = air_controller
+                add_unit_leader_trait = big_gun_expert
+                add_unit_leader_trait = bold
+
+                add_unit_leader_trait = spotter
+                add_unit_leader_trait = ironside
+
+                add_unit_leader_trait = green_water_expert
+                add_unit_leader_trait = arctic_water_expert
+                add_unit_leader_trait = blue_water_expert
+                add_unit_leader_trait = inshore_fighter
+
+            }
+            
+            # 清除标记，允许下次重新随机
+            every_unit_leader = {
+                limit = { has_unit_leader_flag = trait_granted_flag }
+                clr_unit_leader_flag = trait_granted_flag
+            }
+        }
+    }
+
+	level_up_commander_star_decision = { # 仅升级将领总星级
+		icon = generic_army_experience
+		available = { always = yes }
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			random_unit_leader = { 
+				limit = { always = yes } 
+				add_skill_level = 10 # 仅提升总体等级，不加四维
+			}
+		}
+	}
+
+	level_up_commander_decision = { # 随机升级一名将领并提升四维
+		icon = generic_army_experience
+		available = { always = yes }
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			random_unit_leader = { 
+				limit = { always = yes } # 可在这里做"可控化"筛选
+				# 移除了 add_skill_level，现在只增加四维属性，不提升总体星级
+				add_attack = 100 # 攻击能力+10
+				add_defense = 100 # 防御能力+10
+				add_planning = 100 # 计划能力+10
+				add_logistics = 100# 后勤能力+10
+			}
+		}
+	}
+
+	add_faction_initiative_decision = { # 增加阵营倡议点数
+		icon = generic_political_power
+		available = { is_in_faction = yes } # 只有在阵营中才可用
+		cost = 0
+		days_remove = 1
+		complete_effect = {
+			add_faction_initiative = 1
+		}
+	}
+
+	temp_mastery_gain_decision = {
+        icon = generic_army_experience
+		cost = 0
+		days_remove = 0
+		complete_effect = {
+            add_mastery_bonus = {
+                bonus = 10000
+                days = 7
+                name = dyn_spirit_weekly_mastery
+                track = operations
+            }
+		}
+	}
+
+
+}           bonus = 10000
+                days = 7
+                name = dyn_spirit_weekly_mastery
+                track = operations
+            }
+		}
+	}
+
+
+}
